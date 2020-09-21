@@ -28,7 +28,7 @@ Page that renders all courses stored in the user's shopping cart and the total p
 
 ### Course info
 Page that renders the course's info based on the route parameter passed through. Ex: `/courses/javascript-master`
-![Course info preview](./src/img/preview/course-info.png)
+![Cart preview](./src/img/preview/cart.png)
 
 ## Features
  - Renders dynamically the courses using React
