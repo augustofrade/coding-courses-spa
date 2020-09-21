@@ -24,11 +24,11 @@ Page containing fictional contacts of the web platform team.
 
 ### Cart
 Page that renders all courses stored in the user's shopping cart and the total pricing of all of them. The data is stored in localStorage. Has conditional render based on wether there's at least one course on the cart. Also, it's possible to remove a course or visit its page for better information visualization.
-![About page preview](./src/img/preview/about.png)
+![Cart page preview](./src/img/preview/cart.png)
 
 ### Course info
 Page that renders the course's info based on the route parameter passed through. Ex: `/courses/javascript-master`
-![Cart preview](./src/img/preview/cart.png)
+![Course info page preview](./src/img/preview/course-info.png)
 
 ## Features
  - Renders dynamically the courses using React
