@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Coding Courses Platform
+In this project I got a bit more ambitious and developed something bigger than anything I've done before with React. It's a platform that emulates a real coding courses website: it has a homepage, "about", "contact" and "courses" routes.\
+The courses info are obtained through a local file named "data.js".\
+I may implement server-side features, such as login and database storage in the future.
 
-## Available Scripts
+## About
+The focus of this application was to build something bigger with React, focusing more on the display of the data via components emulating a real application than the visual itself, that's how Bootstrap came in handy agilizing the process of stylizing the interface.
 
-In the project directory, you can run:
+## Pages
+### Home
+Simple, elegant and straight-forward page with some information about the "*Coding Courses team*", vectors promoting the platform and "top courses" section.
+![Home page preview](./src/img/preview/home-page.png)
 
-### `npm start`
+### Courses
+Page listing all the available courses on the platform.
+![Courses page preview](./src/img/preview/courses.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### About
+Page containing some info about the fictional team of this platform.
+![About page preview](./src/img/preview/about.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Contact
+Page containing fictional contacts of the web platform team.
 
-### `npm test`
+### Cart
+Page that renders all courses stored in the user's shopping cart and the total pricing of all of them. The data is stored in localStorage. Has conditional render based on wether there's at least one course on the cart. Also, it's possible to remove a course or visit its page for better information visualization.
+![About page preview](./src/img/preview/about.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Course info
+Page that renders the course's info based on the route parameter passed through. Ex: `/courses/javascript-master`
+![Course info preview](./src/img/preview/course-info.png)
 
-### `npm run build`
+## Features
+ - Renders dynamically the courses using React
+ - Saves cart courses on LocalStorage for further processing
+ - Navbar cart icon's badge updates dynamically based on amount of courses on the user's cart
+ - Dynamic and interactive cart page
+ - Invalid route custom page
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies used
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- React
+- React Router
+ - Material-UI icons and badge
+ - Bootstrap
+- [undraw.co](https://undraw.co) for the vectors
+- [thispersondoesnotexist](https://thispersondoesnotexist.com) for the team members (about page)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
+Clone this repository\
+In the root directory of the repository run `npm install` on the command prompt.\
+After all the dependencies have been installed, run `npm start` on the same directory
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Further informations
+This was a nice project to develop. I'm satisfied with the results for now, and even thinking about further upgrades.\
+First time using various Bootstrap functionalities and Material-UI icons that I've been wanting to use for some time.
